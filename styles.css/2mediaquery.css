@@ -1,0 +1,89 @@
+@media screen and (max-width: 768px) {
+  body {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    max-width: 768px;
+    max-height: 1024px;
+  }
+
+  .campo__digitacao {
+    
+    height: 650px;
+    width: 100%;
+
+  }
+
+  .campo__criptografia {
+    padding-left: 75px;
+    height: 550px;
+    width: 400px;
+  }
+
+  footer {
+    height: 300px;
+  }
+
+  .campo__resultado {
+    height: 250px;
+  }
+
+  .campo__digite__texto {
+    padding-top: 5%;
+    height: 200px;
+  }
+
+  .campocolado {
+    height: 500px;
+    font-size: 2rem;
+  }
+
+  .criptoArea {
+    max-width: 400px;
+  }
+
+  .campo__botoes {
+    margin: 50px;
+  }
+
+  .criptografar {
+    width: 200px;
+    font-size: 1rem;
+  }
+
+  .descriptografar {
+    width: 200px;
+    font-size: 1rem;
+  }
+
+  .campo__mensagem__texto {
+    font-family: var(--font);
+    font-size: 0.8rem;
+    font-weight: 400;
+    color: var(--texto-aviso);
+  }
+
+  .campo__digite__texto__desejado {
+    width: 400px;
+    font-size: 1rem;
+  }
+  .output {
+    height: 300px;
+    max-width: 400px;
+    background-color: var(--campo-resultado-bg);
+    border-radius: 2rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+  }
+  
+  p {
+    height: 100px;
+    text-align: center;
+  }
+  .copiar {
+    width: 200px;
+    font-size: 1.5rem;
+  }
+}

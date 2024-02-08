@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>2.challenge</title>
+    <link rel="stylesheet" href="/styles.css/cripto.css" class="styles">
+    <link rel="stylesheet" href="/styles.css/2mediaquery.css" class="rel">
+    <link rel="stylesheet" href="/styles.css/1cel.mediaquery.css" class="rel">
+</head>
+
+<body>
+    <header class="cabecalho">
+        <img src="/assets/Frame 6.png" alt="logo da Alura" class="logo">
+    </header>
+    <main class="campo__digitacao">
+
+        <section class="campo__criptografia">
+            <div class="campo__digite__texto">
+                <button class="criptoArea" onclick="colarTexto()" id="botaoColar">clique aqui para colar</button>
+                <textarea class="campocolado" id="campoDestino" placeholder="texto copiado"></textarea>
+
+            </div>
+            <div class="campo__botoes">
+                <div class="campo__botoes__mensagem">
+                    <span class="zondicons--exclamation-solid"></span>
+                    <h2 class="campo__mensagem__texto">Apenas letras minúsculas e sem acento.</h2>
+                </div>
+                <div class="campo__botoes__navegacao">
+                    <button onclick="redirecionar()" class="criptografar">Criptografar</button>
+                    <script>
+                        function redirecionar() {
+                            window.location.href = "index.html";
+                        }
+                    </script>
+
+                    <button onclick="descriptografarTexto()" class="descriptografar">Descriptografar</button>
+                </div>
+            </div>
+    </main>
+
+    <footer>
+        <div class="campo__resultado">
+            <div class="campo__digite__texto__desejado">
+                <div class="output">
+
+                    <div class=textoDescriptografado id="textoDescriptografado">
+                        <p id="outputText"></p>
+                    </div>
+
+                    <div class="botaoCopiar">
+                        <button class="copiar" onclick="copiarTexto()">Copiar</button>
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+    </footer>
+    <script src="/app.js/descripto.js" defer></script>
+</body>
+
+
+</html>

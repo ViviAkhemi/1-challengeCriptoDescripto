@@ -1,0 +1,193 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap');
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+
+}
+
+:root {
+  --font: 'Inter', sans-serif;
+  --body-bg-color: #f3f5fc;
+  --campo-resultado-bg: #ffffff;
+  --cor-bg-button-criptografar: #0A3871;
+  --cor-bg-button-descriptografar: #d8dfe8;
+  --cor-fonte-azul: #0A3871;
+  --cor-fonte-branca: #ffffff;
+  --cor-fonte-resultado-nomesage: ;
+  --cor-fonte-resultado-texto: ;
+  --texto-aviso: #495057;
+  --cor-hover: fuchsia;
+
+}
+
+body {
+  display: flex;
+  justify-content: space-between;
+  background-color: var(--body-bg-color);
+  gap: 8vw;
+}
+
+.logo {
+  padding-top: 5vh;
+}
+
+.campo__digitacao {
+  height: 100vh;
+  display: flex;
+  justify-content: space-between;
+}
+
+.campo__criptografia {
+  width: 30vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.campo__digite__texto {
+  padding-top: 30%;
+  height: 80vh;
+  display: flex;
+  flex-direction: column;
+  align-content: space-between;
+
+}
+.criptoArea {
+  background-color: var(--body-bg-color);
+  border: transparent;
+  color: var(--cor-fonte-azul);
+  font-family: var(--font);
+  font-size: 2rem;
+  font-weight: 400;
+
+}
+.campocolado {
+  background-color: var(--body-bg-color);
+  height: 70vh;
+  text-align: center;
+  border: transparent;
+  font-family: var(--font);
+  font-size: 1.5rem;
+  color: var(--cor-fonte-azul)
+  
+}
+::placeholder {
+  font-size: 2rem;
+  font-family: var(--font);
+  color: var(--body-bg-color);
+  
+}
+.digita__titulo {
+  color: var(--cor-fonte-azul);
+  font-family: var(--font);
+  font-size: 2rem;
+  font-weight: 400;
+}
+
+.zondicons--exclamation-solid {
+  display: inline-block;
+  width: 1em;
+  height: 1em;
+  --svg: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 20 20'%3E%3Cpath fill='%23000' d='M2.93 17.07A10 10 0 1 1 17.07 2.93A10 10 0 0 1 2.93 17.07M9 5v6h2V5zm0 8v2h2v-2z'/%3E%3C/svg%3E");
+  background-color: currentColor;
+  -webkit-mask-image: var(--svg);
+  mask-image: var(--svg);
+  -webkit-mask-repeat: no-repeat;
+  mask-repeat: no-repeat;
+  -webkit-mask-size: 100% 100%;
+  mask-size: 100% 100%;
+}
+
+.campo__botoes__mensagem {
+  display: flex;
+  align-items: center;
+}
+
+.campo__mensagem__texto {
+  font-family: var(--font);
+  font-size: 1rem;
+  font-weight: 400;
+  color: var(--texto-aviso);
+}
+
+.campo__mensagem__texto:hover {
+  color: var(--cor-hover);
+  transform: scale(1.5);
+  padding-left: 6%;
+}
+
+.campo__botoes__navegacao {
+  display: flex;
+  justify-content: space-between;
+  gap: 1.5rem;
+}
+
+.criptografar {
+  width: 20vw;
+  font-family: var(--font);
+  font-size: 1.5rem;
+  font-weight: 400;
+
+  background-color: var(--cor-bg-button-criptografar);
+  color: var(--cor-fonte-branca);
+  padding: 1.5rem;
+  border-radius: 1.5rem;
+}
+
+.descriptografar {
+  width: 20vw;
+  font-family: var(--font);
+  font-size: 1.5rem;
+  font-weight: 400;
+
+  background-color: var(--cor-bg-button-descriptografar);
+  color: var(--cor-fonte-azul);
+  padding: 1.5rem;
+  border-radius: 1.5rem;
+}
+
+footer {
+  padding-left: 8%;
+  max-width: 47%;
+}
+
+.output {
+  height: 100vh;
+  background-color: var(--campo-resultado-bg);
+  border-radius: 2rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+
+p {
+  padding: 10%;
+  width: 100%;
+  height: 70vh;
+  font-family: var(--font);
+  font-size: 1.5rem;
+  font-weight: 400;
+  color: #495057;
+  text-align: left;
+}
+.copiar {
+  width: 20vw;
+  font-family: var(--font);
+  font-size: 1.5rem;
+  font-weight: 400;
+  background-color: var(--cor-bg-button-descriptografar);
+  color: var(--cor-fonte-azul);
+  padding: 1.5rem;
+  border-radius: 1.5rem;
+}
+.textoDescriptografado {
+  padding: 10%;
+  text-align: center;
+  font-family: var(--font);
+  font-size: 1.5rem;
+  font-weight: 400;
+  color: #495057;
+}

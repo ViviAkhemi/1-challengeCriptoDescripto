@@ -1,0 +1,164 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap');
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+:root {
+  --font: 'Inter', sans-serif;
+  --body-bg-color: #f3f5fc;
+  --campo-resultado-bg: #ffffff;
+  --cor-bg-button-criptografar: #0A3871;
+  --cor-bg-button-descriptografar: #d8dfe8;
+  --cor-fonte-azul: #0A3871;
+  --cor-fonte-branca: #ffffff;
+  --cor-fonte-resultado-nomesage: ;
+  --cor-fonte-resultado-texto: ;
+  --texto-aviso: #495057;
+  --cor-hover: fuchsia;
+
+}
+
+body {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  background-color: var(--body-bg-color);
+  gap: 80px;
+}
+
+.logo {
+  padding-top: 5vh;
+}
+textarea {
+  background-color: var(--body-bg-color);
+  padding-top: 35%;
+  height: 80vh;
+  width: 100%;
+  color: var(--cor-fonte-azul);
+  font-size: 2.5rem;
+  font-weight: 400; 
+  border-color: transparent;
+  outline: none;
+ }
+::placeholder {
+  color: var(--cor-fonte-azul);
+}
+
+
+.campo__digitacao {
+  height: 100vh;
+  display: flex;
+  justify-content: space-between;
+}
+
+.campo__criptografia {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.zondicons--exclamation-solid {
+  display: inline-block;
+  width: 1em;
+  height: 1em;
+  --svg: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 20 20'%3E%3Cpath fill='%23000' d='M2.93 17.07A10 10 0 1 1 17.07 2.93A10 10 0 0 1 2.93 17.07M9 5v6h2V5zm0 8v2h2v-2z'/%3E%3C/svg%3E");
+  background-color: currentColor;
+  -webkit-mask-image: var(--svg);
+  mask-image: var(--svg);
+  -webkit-mask-repeat: no-repeat;
+  mask-repeat: no-repeat;
+  -webkit-mask-size: 100% 100%;
+  mask-size: 100% 100%;
+}
+
+.campo__botoes__mensagem {
+  display: flex;
+  align-items: center;
+}
+
+.campo__mensagem__texto {
+  font-family: var(--font);
+  font-size: 1rem;
+  font-weight: 400;
+  color: var(--texto-aviso);
+}
+
+.campo__mensagem__texto:hover {
+  color: var(--cor-hover);
+  transform: scale(1.5);
+  padding-left: 10%;
+}
+
+.campo__botoes__navegacao {
+  display: flex;
+  justify-content: space-between;
+  gap: 1.5rem;
+}
+
+.criptografar{
+  width: 20vw;
+  font-family: var(--font);
+  font-size: 2rem;
+  font-weight: 400;
+  text-decoration: none;
+  text-align: center;
+  background-color: var(--cor-bg-button-criptografar);
+  color: var(--cor-fonte-branca);
+  padding: 1.5rem;
+  border-radius: 1.5rem;
+}
+
+.descriptografar {
+  width: 20vw;
+  font-family: var(--font);
+  font-size: 2rem;
+  font-weight: 400;
+
+  background-color: var(--cor-bg-button-descriptografar);
+  color: var(--cor-fonte-azul);
+  padding: 1.5rem;
+  border-radius: 1.5rem;
+}
+
+footer {
+  padding-left: 8%;
+}
+
+.campo__resultado {
+  padding: auto;
+  height: 100vh;
+  background-color: var(--campo-resultado-bg);
+  border-radius: 2rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.campo__sem__resultado__texto {
+  font-family: var(--font);
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: #343A40;
+  text-align: center;
+}
+
+.campo__digite__texto__desejado {
+  font-family: var(--font);
+  font-size: 1.5rem;
+  font-weight: 400;
+  color: #495057;
+  text-align: center;
+}
+
+.imagem__resultado {
+  width: 336px;
+  height: 304px;
+  
+}
+.outputText {
+  color: var(--cor-fonte-azul)
+  
+}

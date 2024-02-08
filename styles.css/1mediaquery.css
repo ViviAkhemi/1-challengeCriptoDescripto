@@ -1,0 +1,56 @@
+@media screen and (max-width: 768px) {
+    body {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      max-width: 768px;
+      max-height: 1024px;
+    }
+    .campo__digitacao{
+      padding: 0% 20%;
+      height: 650px;
+      width: 100%;
+  
+    }
+    .campo__criptografia {
+      height: 550px;
+      width: 100%;
+    }
+    footer {
+      height: 300px;
+    }
+    .imagem__resultado{ 
+      display: none;
+  
+    }
+    .campo__resultado {
+      height: 150px ;
+    }
+    .campo__digite__texto {
+      height: 500px;
+    }
+    textarea {
+      height: 500px;
+      font-size: 2rem;
+    }
+    .campo__botoes {
+      max-width: 250px;
+    }
+    .criptografar {
+      width: 200px;
+      font-size: 1rem;
+    }
+    .descriptografar {
+      width: 200px;
+      font-size: 1rem;
+    }
+    .campo__mensagem__texto {
+      font-family: var(--font);
+      font-size: 0.8rem;
+      font-weight: 400;
+      color: var(--texto-aviso);
+    }
+    .campo__digite__texto__desejado {
+      font-size: 1rem;
+    }
+  }
